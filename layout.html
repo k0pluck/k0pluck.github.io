@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navigasi 1 */
+        .nav1 {
+            background-color: #b8860b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        /* Navigasi 2 */
+        .nav2 {
+            background-color: #5b9bd5;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        /* Slider */
+        .slider {
+            background-color: #ed7d31;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Container untuk Content dan Sidebar */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Kolom Kiri - Content */
+        .content-column {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .content-box {
+            background-color: #ffd966;
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
+            font-weight: bold;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #2f528f;
+        }
+
+        /* Kolom Kanan - Sidebar */
+        .sidebar-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar-box {
+            background-color: #a9d18e;
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
+            font-weight: bold;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #2f528f;
+        }
+
+        /* Footer 1 */
+        .footer1 {
+            background-color: #c65911;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Footer 2 */
+        .footer2 {
+            background-color: #7f3f00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .slider {
+                padding: 40px 20px;
+                font-size: 20px;
+            }
+
+            .content-box,
+            .sidebar-box {
+                min-height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi 1 -->
+    <nav class="nav1">
+        Navigasi 1
+    </nav>
+
+    <!-- Navigasi 2 -->
+    <nav class="nav2">
+        Navigasi 2
+    </nav>
+
+    <!-- Slider -->
+    <section class="slider">
+        Slider
+    </section>
+
+    <!-- Container Utama -->
+    <div class="container">
+        <!-- Kolom Kiri - Content -->
+        <div class="content-column">
+            <div class="content-box">Content 1</div>
+            <div class="content-box">Content 2</div>
+            <div class="content-box">Content 3</div>
+        </div>
+
+        <!-- Kolom Kanan - Sidebar -->
+        <div class="sidebar-column">
+            <div class="sidebar-box">Sidebar 1</div>
+            <div class="sidebar-box">Sidebar 2</div>
+        </div>
+    </div>
+
+    <!-- Footer 1 -->
+    <footer class="footer1">
+        Footer 1
+    </footer>
+
+    <!-- Footer 2 -->
+    <footer class="footer2">
+        Footer 2
+    </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* ==================== RESPONSIVE BREAKPOINTS ==================== */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carousel-caption {
+        left: 15%;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (max-width: 991px) {
+    .carousel-caption {
+        left: 5%;
+        right: 5%;
+        text-align: center;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 2.25rem;
+    }
+    
+    .cta-section {
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (max-width: 767px) {
+    .carousel-item {
+        height: 70vh;
+        min-height: 400px;
+    }
+    
+    .carousel-caption {
+        bottom: 25%;
+        padding: 1rem;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 1.75rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .reason-number {
+        width: 24px;
+        height: 24px;
+        font-size: 0.75rem;
+    }
+    
+    .alumni-card .card-img-top,
+    .news-card .card-img-top {
+        height: 180px;
+    }
+}
+
+/* Extra small devices (portrait phones, <576px) */
+@media (max-width: 575px) {
+    .navbar-brand img {
+        height: 35px;
+    }
+    
+    .carousel-item {
+        height: 60vh;
+        min-height: 350px;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .cta-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .cta-icon i {
+        font-size: 2rem;
+    }
+    
+    #backToTop {
+        width: 45px;
+        height: 45px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+}
+
+/* High DPI / Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .navbar-brand img,
+    .main-footer img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .main-header,
+    .hero-section,
+    #backToTop,
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+    }
+    
+    .card,
+    .list-group-item {
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #ddd;
+    }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Dark Mode System Preference */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --bg-body: #121212;
+        --bg-section: #1E1E1E;
+        --text-primary: #F8F9FA;
+        --text-secondary: #ADB5BD;
+        --card-bg: #2D2D2D;
+        --border-color: #495057;
+    }
+}
